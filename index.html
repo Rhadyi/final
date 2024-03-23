@@ -5,20 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
     <style>
-        *{
+
+        body{
+            background-image: url(https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg?w=1060&t=st=1711194362~exp=1711194962~hmac=69e1b2ff813df86c16cc0bf8d1af13b5d6214b802fb3bd510b35be2ed067ad72);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 10px;
+            max-height: 80px;
+        }
+        .navbar {
+            justify-content: space-between;
+            display:flex;
+            height:100%;
+        }
+        .menu-item {
+            flex-grow: 1; 
+            background: #555;
+            color: white;
+            text-decoration: none;
+            transform: skew(-10deg);
+            transition: background 0.3s ease;
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            height: 80%; 
+            padding: 40px 30px;
+            margin-right:2px;
+        }
+        
+        .menu-item:hover {
+            background: #777;
+            padding-right:30px;
+            color:greenyellow;
+        }
+        a{
+            text-decoration:none;
+            color:white;
             
         }
+        a:hover{
+            padding-right:30px;
+            color:greenyellow;
+        }
+        hr {
+            border: none; 
+            border-top: 2px solid #ccc; 
+            margin: 20px 0;
+            border-radius:10px;
+        }
+        .icon{
+                animation: rotateAnimation 5s linear infinite;
+                margin-top:0px;
+        }
+        @keyframes rotateAnimation {
+                from {
+                transform: rotate(0deg);
+                }
+                to {
+                transform: rotate(360deg); 
+                }
+        }
+        
     </style>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="index.html">HOMEPAGE</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li><a href="contact.html">CONTACT US</a></li>
-            <li><a href="services.html">OUR SERVICES</a></li>
-        </ul>
+        <div>
+            <img class="icon" src="Designer (2).png" alt="" style="max-width:10%; height:auto;">
+        </div>
+        <div class="navbar">
+            <li class="menu-item"><a href="index.html">HOMEPAGE</a></li>
+            <li class="menu-item"><a href="about.html">ABOUT US</a></li>
+            <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
+            <li class="menu-item"><a href="services.html">OUR SERVICES</a></li>
+        </div>
     </nav>
+    <hr>
+    <div class="welcome">
+        
+    </div>
+    <div class="cars" id="car-1">
+        <img src="28-287670_black-lamborghini-png.png" alt="">
+    </div>
+    <div class="cars" id="car-2">
+
+    </div>
+    <div class="cars" id="car-3">
+
+    </div>
+    <div class="cars" id="car-4">
+
+    </div>
     <footer>
 
     </footer>
