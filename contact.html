@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        body{
+            margin:0px;
+        }
         nav {
             display: flex;
             justify-content: space-between;
@@ -64,6 +68,16 @@
                 transform: rotate(360deg); 
                 }
         }
+        .icon-content{
+            display:flex;
+            align-items: flex-start;
+        }
+        .icon-text{
+            margin-top:15px;
+            padding-left:10px;
+        }
+
+        
         .container {
             width: 70%;
             max-width: 600px;
@@ -124,8 +138,9 @@
             flex-direction: column;
             align-items: self-start; 
             padding-bottom: 20px;
-            padding-left:20px;
+            padding-left:5px;
             margin-right:-20px;
+            padding-top:10px;
         }
         
         .vertical-line {
@@ -143,7 +158,7 @@
             position: absolute;
             top: 24%;
             transform: translateY(-50%);
-            width: calc(7% );  
+            width: calc(5% );  
             height: 1px;  
             background-color: grey;  
         }
@@ -162,24 +177,36 @@
             display:flex;
             flex-direction:column;
             align-items:center;
+            width:50%;
+            padding-right:20px;
         }
         #fontawesome::after{
             content: "";
             position: absolute;
             top: 24%;
             transform: translateY(-50%);
-            width: calc(42% );  
+            width: calc(30% );  
             height: 1px;  
             background-color: grey;  
             overflow: hidden;
+        }
+        .social{
+            width:100%;
         }
     </style>
 </head>
 <body>
     <nav>
-        <div>
-            <img class="icon" src="Designer (2).png" alt="" style="max-width:10%; height:auto;">
+        <div class="icon-content">
+            <div>
+                <img class="icon" src="Designer (2).png" alt="" style="max-width:80px; height:auto; ">
+            </div>
+            <div class="icon-text">          
+                <h3>RHADY'S RENTAL</h3>
+            </div>
+
         </div>
+
         <div class="navbar">
             <li class="menu-item"><a href="index.html">HOMEPAGE</a></li>
             <li class="menu-item"><a href="about.html">ABOUT US</a></li>
@@ -216,18 +243,18 @@
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <h1>THis is the perosn I was talking about</h1>
-                <p>There is a person in the whereabouts of hte thingy they <br>are called a person simply because they exist to malnoutish</p> 
+                <h1 >RHADY'S RENTAL LLC</h1>
+                <p>Rhady's Rental LLC prioritizes customer satisfaction by offering exceptional service for a smooth rental experience.</p>
             </div>
             <div class="vertical-line"></div>
             <div class="footer-icons">
                 <div id="fontawesome">
-                    <i class="fa fa-car"></i>
-                    <i class="fa fa-car" style="font-size:48px;"></i>
-                    <i class="fa fa-car" style="font-size:60px;color:red;"></i>
+                    <a href="https://www.instagram.com/rhadyi/"><i class="fa fa-instagram"style="font-size:48px;color:red;"></i></a>
+                    <a href="https://www.facebook.com/isengwe.rhady"><i class="fa fa-facebook" style="font-size:48px;"></i></a>
+                    <a href="https://www.twitter.com/@mer_iyd"><i class="fa fa-twitter" style="font-size:48px;color:red;"></i></a>
                 </div>
-                <div>
-                    <h1>How are you doing sir?</h1>
+                <div class="social">
+                    <h1>Our Social Media</h1>
                 </div>
                 
             </div>

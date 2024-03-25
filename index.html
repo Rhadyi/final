@@ -136,8 +136,9 @@
             flex-direction: column;
             align-items: self-start; 
             padding-bottom: 20px;
-            padding-left:20px;
+            padding-left:5px;
             margin-right:-20px;
+            padding-top:10px;
         }
         
         .vertical-line {
@@ -155,7 +156,7 @@
             position: absolute;
             top: 24%;
             transform: translateY(-50%);
-            width: calc(7% );  
+            width: calc(8% );  
             height: 1px;  
             background-color: grey;  
         }
@@ -174,26 +175,45 @@
             display:flex;
             flex-direction:column;
             align-items:center;
+            width:50%;
+            padding-right:20px;
         }
         #fontawesome::after{
             content: "";
             position: absolute;
             top: 24%;
             transform: translateY(-50%);
-            width: calc(42% );  
+            width: calc(30% );  
             height: 1px;  
             background-color: grey;  
             overflow: hidden;
         }
-        
-        
+        .icon-content{
+            display:flex;
+            align-items: flex-start;
+        }
+        .icon-text{
+            margin-top:15px;
+            padding-left:10px;
+        }
+
+        .social{
+            width:100%;
+        }
     </style>
 </head>
 <body>
     <nav>
-        <div>
-            <img class="icon" src="Designer (2).png" alt="" style="max-width:10%; height:auto;">
+        <div class="icon-content">
+            <div>
+                <img class="icon" src="Designer (2).png" alt="" style="max-width:80px; height:auto; ">
+            </div>
+            <div class="icon-text">          
+                <h3>RHADY'S RENTAL</h3>
+            </div>
+
         </div>
+
         <div class="navbar">
             <li class="menu-item"><a href="index.html">HOMEPAGE</a></li>
             <li class="menu-item"><a href="about.html">ABOUT US</a></li>
@@ -207,7 +227,7 @@
         <div class="header">
             <center><h1>WELCOME TO OUR PAGE</h1></center>
             <br>
-            <h2>At [Company Name], we are passionate about cars. Whether you're looking to zoom around town in a sleek and stylish new car you can call your own, or embark on an adventure with the perfect rental for your needs, we've got you covered. We offer a wide selection of high-quality vehicles to choose from, all at competitive prices. Our knowledgeable staff is dedicated to providing exceptional customer service to ensure you have a smooth and enjoyable experience. So, come explore the thrill of the drive with [Company Name]!</h2>
+            <h2>At RHADY'S RENTAL LLC, we are passionate about cars. Whether you're looking to zoom around town in a sleek and stylish new car you can call your own, or embark on an adventure with the perfect rental for your needs, we've got you covered. We offer a wide selection of high-quality vehicles to choose from, all at competitive prices. Our knowledgeable staff is dedicated to providing exceptional customer service to ensure you have a smooth and enjoyable experience. So, come explore the thrill of the drive with RHADY'S RENTAL LLC!</h2>
             <center><a href="services.html" class="welcome-btn">Explore Our Inventory</a></center>
         </div>
         <div class="filler">
@@ -234,18 +254,18 @@
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <h1>THis is the perosn I was talking about</h1>
-                <p>There is a person in the whereabouts of hte thingy they <br>are called a person simply because they exist to malnoutish</p> 
+                <h1 style="padding-left:3%">RHADY'S RENTAL LLC</h1>
+                <p>Rhady's Rental LLC prioritizes customer satisfaction by offering exceptional service for a smooth rental experience.</p>
             </div>
             <div class="vertical-line"></div>
             <div class="footer-icons">
                 <div id="fontawesome">
-                    <i class="fa fa-car"></i>
-                    <i class="fa fa-car" style="font-size:48px;"></i>
-                    <i class="fa fa-car" style="font-size:60px;color:red;"></i>
+                    <a href="https://www.instagram.com/rhadyi/"><i class="fa fa-instagram"style="font-size:48px;color:red;"></i></a>
+                    <a href="https://www.facebook.com/isengwe.rhady"><i class="fa fa-facebook" style="font-size:48px;"></i></a>
+                    <a href="https://www.twitter.com/@mer_iyd"><i class="fa fa-twitter" style="font-size:48px;color:red;"></i></a>
                 </div>
-                <div>
-                    <h1>How are you doing sir?</h1>
+                <div class="social">
+                    <h1>Our Social Media</h1>
                 </div>
                 
             </div>
