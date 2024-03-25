@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-
         body{
-            background-image: url(https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg?w=1060&t=st=1711194362~exp=1711194962~hmac=69e1b2ff813df86c16cc0bf8d1af13b5d6214b802fb3bd510b35be2ed067ad72);
+            margin:0px;
         }
         nav {
             display: flex;
@@ -68,6 +68,124 @@
                 transform: rotate(360deg); 
                 }
         }
+        .welcome{
+            display:flex;
+            flex-direction:column;
+            background-image: url(https://img.freepik.com/free-photo/car-roof-with-opened-back_23-2148321927.jpg);
+            background-color: rgba(0, 0, 0, 0.5);
+            background-size: cover;
+            height:100%
+            
+        }
+        .header{
+            display:flex;
+            flex-direction:column;
+            word-spacing: 2%;
+            width:70%;
+            align-self:center;
+            margin-bottom: 30px;
+        }
+        .welcome-btn {
+            bottom: 20px; 
+            right: 20px; 
+            padding: 10px 20px;
+            background-color: #007bff; 
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align:center;
+            width:20%;
+        }
+        .filler{
+            height:600px;
+            display:flex;
+            flex-wrap:wrap;
+            margin-bottom: 20px;
+        }
+        .filler2{
+            height:100px;
+        }
+        .filler {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 600px; 
+        } 
+        .card {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            padding: 10px;
+            transition: transform 0.3s ease;
+            width: 31%; 
+        }
+        .card:hover {
+            transform: translateY(-10px); 
+        }
+        .card img{
+            width:100%;
+            height:auto;
+        }
+        
+        footer {
+            position: relative;
+            background-color: darkslategray;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            align-items: self-start; 
+            padding-bottom: 20px;
+            padding-left:20px;
+            margin-right:-20px;
+        }
+        
+        .vertical-line {
+            width: 1.5px; 
+            background-color: grey;
+            margin-left:2%; 
+        }
+        .footer-about{
+            margin-top:2%;
+            margin-right:2%;
+            border-right: 1.5px solid grey; 
+        }
+        .vertical-line::after{
+            content: "";
+            position: absolute;
+            top: 24%;
+            transform: translateY(-50%);
+            width: calc(7% );  
+            height: 1px;  
+            background-color: grey;  
+        }
+        
+        .footer-content{
+            display: flex;
+            align-items: center; 
+            margin-bottom: 20px; 
+        }
+        .copyright-disclaimer{
+            display:flex;
+            align-self:center;
+            margin-bottom:0px;
+        }
+        .footer-icons{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+        }
+        #fontawesome::after{
+            content: "";
+            position: absolute;
+            top: 24%;
+            transform: translateY(-50%);
+            width: calc(42% );  
+            height: 1px;  
+            background-color: grey;  
+            overflow: hidden;
+        }
+        
         
     </style>
 </head>
@@ -85,22 +203,56 @@
     </nav>
     <hr>
     <div class="welcome">
-        
+        <div class="filler2"></div>
+        <div class="header">
+            <center><h1>WELCOME TO OUR PAGE</h1></center>
+            <br>
+            <h2>At [Company Name], we are passionate about cars. Whether you're looking to zoom around town in a sleek and stylish new car you can call your own, or embark on an adventure with the perfect rental for your needs, we've got you covered. We offer a wide selection of high-quality vehicles to choose from, all at competitive prices. Our knowledgeable staff is dedicated to providing exceptional customer service to ensure you have a smooth and enjoyable experience. So, come explore the thrill of the drive with [Company Name]!</h2>
+            <center><a href="services.html" class="welcome-btn">Explore Our Inventory</a></center>
+        </div>
+        <div class="filler">
+            
+            <div class="card">
+                <img src="https://img.freepik.com/free-photo/portrait-positive-african-american-lady-inside-car_93675-133553.jpg" alt="">
+                <h2>This is a card title</h2>
+                <p>This is some content for the card.</p>
+              </div>
+              <div class="card">
+                <img src="https://img.freepik.com/free-photo/stylish-black-woman-car-salon_1157-21401.jpg" alt="">
+                <h2>Another card title</h2>
+                <p>More content for another card.</p>
+              </div>
+              <div class="card">
+                <img src="https://img.freepik.com/free-photo/man-with-checking-car-engine_1150-1523.jpg" alt="">
+                <h2>Yet another card title</h2>
+                <p>Content for the third card.</p>
+              </div>
+        </div>
+        <div></div>
     </div>
-    <div class="cars" id="car-1">
-        <img src="28-287670_black-lamborghini-png.png" alt="">
-    </div>
-    <div class="cars" id="car-2">
-
-    </div>
-    <div class="cars" id="car-3">
-
-    </div>
-    <div class="cars" id="car-4">
-
-    </div>
+    
     <footer>
-
+        <div class="footer-content">
+            <div class="footer-about">
+                <h1>THis is the perosn I was talking about</h1>
+                <p>There is a person in the whereabouts of hte thingy they <br>are called a person simply because they exist to malnoutish</p> 
+            </div>
+            <div class="vertical-line"></div>
+            <div class="footer-icons">
+                <div id="fontawesome">
+                    <i class="fa fa-car"></i>
+                    <i class="fa fa-car" style="font-size:48px;"></i>
+                    <i class="fa fa-car" style="font-size:60px;color:red;"></i>
+                </div>
+                <div>
+                    <h1>How are you doing sir?</h1>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright-disclaimer">
+            <center>&copy;2024 Rhady I. GASINGWA</center>
+        </div>
     </footer>
 </body>
 </html>
