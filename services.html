@@ -6,7 +6,9 @@
     <title>SERVICES</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-
+        *{
+            font-family:sans-serif;
+        }
         body{
             background-image: url(https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg?w=1060&t=st=1711194362~exp=1711194962~hmac=69e1b2ff813df86c16cc0bf8d1af13b5d6214b802fb3bd510b35be2ed067ad72);
 
@@ -78,6 +80,7 @@
         .icon-text{
             margin-top:15px;
             padding-left:10px;
+            color:white;
         }
         #car-3{
             width: 50px;
@@ -94,6 +97,7 @@
             padding-left:5px;
             margin-right:-20px;
             padding-top:10px;
+            color:white;
         }
         
         .vertical-line {
@@ -105,13 +109,14 @@
             margin-top:2%;
             margin-right:2%;
             border-right: 1.5px solid grey; 
+            width:35%
         }
         .vertical-line::after{
             content: "";
             position: absolute;
             top: 24%;
             transform: translateY(-50%);
-            width: calc(8% );  
+            width: calc(14% );  
             height: 1px;  
             background-color: grey;  
         }
@@ -161,10 +166,10 @@
         </div>
 
         <div class="navbar">
-            <li class="menu-item"><a href="index.html">HOMEPAGE</a></li>
-            <li class="menu-item"><a href="about.html">ABOUT US</a></li>
-            <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
-            <li class="menu-item"><a href="services.html">OUR SERVICES</a></li>
+            <li class="menu-item"><a href="index.html"><i class="fa fa-home"></i> HOMEPAGE</a></li>
+            <li class="menu-item"><a href="about.html"><i class="fa fa-info-circle"></i> ABOUT US</a></li>
+            <li class="menu-item" ><a href="contact.html"><i class="fa fa-envelope"></i> CONTACT US</a></li>
+            <li class="menu-item" id="active"><a href="services.html"><i class="fa fa-wrench"></i> OUR SERVICES</a></li>
         </div>
     </nav>
     <hr>
@@ -176,19 +181,19 @@
         <p> This is the best car in the game</p>
     </div>
     <div class="cars" id="car-2">
-        <img src="143-1437146_ford-truck-png.png">
+        <img src="C:\Users\lenovo\Pictures\143-1437146_ford-truck-png.png">
     </div>
     <div class="cars" id="car-3">
         <img src="480-4802827_ford-truck-png.png" alt="" style="max-width:1000px; height:auto;">
     </div>
     <div class="cars" id="car-4">
-        <img src="586-5866182_door-png.png" alt="" style="max-width:1000px; height:auto;">
+        <img src="C:\Users\lenovo\Pictures\586-5866182_door-png.png" alt="" style="max-width:1000px; height:auto;">
     </div>
     
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <h1 >RHADY'S RENTAL LLC</h1>
+                <h1>RHADY'S RENTAL LLC</h1>
                 <p>Rhady's Rental LLC prioritizes customer satisfaction by offering exceptional service for a smooth rental experience.</p>
             </div>
             <div class="vertical-line"></div>
@@ -199,7 +204,7 @@
                     <a href="https://www.twitter.com/@mer_iyd"><i class="fa fa-twitter" style="font-size:48px;color:red;"></i></a>
                 </div>
                 <div class="social">
-                    <h1>Our Social Media</h1>
+                <center><h1>Our Social Media</h1></center>
                 </div>
                 
             </div>
