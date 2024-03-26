@@ -21,6 +21,14 @@
             display:flex;
             height:100%;
         }
+        .icon-content{
+            display:flex;
+            align-items: flex-start;
+        }
+        .icon-text{
+            margin-top:15px;
+            padding-left:10px;
+        }
         .menu-item {
             flex-grow: 1; 
             background: #555;
@@ -193,15 +201,6 @@
             background-color: grey;  
             overflow: hidden;
         }
-        .icon-content{
-            display:flex;
-            align-items: flex-start;
-        }
-        .icon-text{
-            margin-top:15px;
-            padding-left:10px;
-        }
-
         .social{
             width:100%;
         }
@@ -220,10 +219,10 @@
         </div>
 
         <div class="navbar">
-            <li class="menu-item"><a href="index.html">HOMEPAGE</a></li>
-            <li class="menu-item"><a href="about.html">ABOUT US</a></li>
-            <li class="menu-item"><a href="contact.html">CONTACT US</a></li>
-            <li class="menu-item"><a href="services.html">OUR SERVICES</a></li>
+            <li class="menu-item" id="active"><a href="index.html"><i class="fa fa-home"></i> HOMEPAGE</a></li>
+            <li class="menu-item"><a href="about.html"><i class="fa fa-info-circle"></i> ABOUT US</a></li>
+            <li class="menu-item" ><a href="contact.html"><i class="fa fa-envelope"></i> CONTACT US</a></li>
+            <li class="menu-item"><a href="services.html"><i class="fa fa-wrench"></i> OUR SERVICES</a></li>
         </div>
     </nav>
     <hr>
